@@ -1,0 +1,15 @@
+查看更新版本
+$ git log
+commit 10434fa4cce51d73f2ad1d4065656ddea65ad2e5
+16进制的数，是一串哈希值——版本号
+
+版本回退
+$ git reset --hard 10434f （版本号前七位）
+
+回到最新版本
+$ git reflog 
+10434fa HEAD@{0}: commit: useGit
+ad1d839 HEAD@{1}: commit (initial): useGit
+
+再次更新
+$ git reset --hard 10434f （版本号前七位）
