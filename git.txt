@@ -43,3 +43,9 @@ $ git remote add origin git@github.com:ewqazxc/add.git
 
 提交到远端仓库
 $ git push origin master
+
+切换分支
+$ git checkout master
+
+创建&切换分支
+$ git checkou -b branch
