@@ -1,0 +1,21 @@
+查看当前的远程库
+$ git remote
+
+远程仓库地址
+$ git remote -v
+
+添加远程仓库
+$ git remote add [shortname] [url]
+
+抓取信息
+$ git fetch origin  //所有
+$ git fetch [shortname]  //[shortname]
+
+远程仓库的详细信息
+$ git remote show [shortname]
+
+远程仓库重命名
+$ git remote rename [old] [new]
+
+远程仓库删除
+$ git remote rm [deleted]

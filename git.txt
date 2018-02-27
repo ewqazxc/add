@@ -48,4 +48,4 @@ $ git push origin master
 $ git checkout master
 
 创建&切换分支
-$ git checkou -b branch
+$ git checkout -b branch
