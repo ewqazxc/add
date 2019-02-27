@@ -1,31 +1,36 @@
-²é¿´¸üĞÂ°æ±¾
+æŸ¥çœ‹æ›´æ–°ç‰ˆæœ¬
 $ git log
 commit 10434fa4cce51d73f2ad1d4065656ddea65ad2e5
-16½øÖÆµÄÊı£¬ÊÇÒ»´®¹şÏ£Öµ¡ª¡ª°æ±¾ºÅ
+16è¿›åˆ¶çš„æ•°ï¼Œæ˜¯ä¸€ä¸²å“ˆå¸Œå€¼â€”â€”ç‰ˆæœ¬å·
 
-°æ±¾»ØÍË
-$ git reset --hard 10434f £¨°æ±¾ºÅÇ°ÆßÎ»£©
+ç‰ˆæœ¬å›é€€
+$ git reset --hard 10434f ï¼ˆç‰ˆæœ¬å·å‰ä¸ƒä½ï¼‰
 
-»Øµ½×îĞÂ°æ±¾
+å›åˆ°æœ€æ–°ç‰ˆæœ¬
 $ git reflog 
 10434fa HEAD@{0}: commit: useGit
 ad1d839 HEAD@{1}: commit (initial): useGit
 
-ÔÙ´Î¸üĞÂ
-$ git reset --hard 10434f £¨°æ±¾ºÅÇ°ÆßÎ»£©
+å†æ¬¡æ›´æ–°
+$ git reset --hard 10434f ï¼ˆç‰ˆæœ¬å·å‰ä¸ƒä½ï¼‰
 
-1¡¢ÏÈÀ­ÏÂÀ´£¬»á×Ô¶¯ºÏ²¢µÄ£¨²»ÓÃ²ÙĞÄ£©
+1ã€å…ˆæ‹‰ä¸‹æ¥ï¼Œä¼šè‡ªåŠ¨åˆå¹¶çš„ï¼ˆä¸ç”¨æ“å¿ƒï¼‰
 
 git pull origin master
 
-2¡¢ÔÙÉÏ´«
+2ã€å†ä¸Šä¼ 
 
 git push -u origin master
 
-²»clone Ö»ÉÏ´«
+ä¸clone åªä¸Šä¼ 
 git init
 git checkout debug
 git add .
 git commit -m 'xxx'
 git remote add origin git@github.com:xxx/xxx.git
 git push origin debug
+
+#ä½¿ç”¨gitæ¢å¤æœªæäº¤çš„è¯¯åˆ æ•°æ®
+git reflog è·å–æœ€è¿‘æ“ä½œè®°å½•
+æƒ³è¦å°†ä»£ç æ¢å¤åˆ°æŒ‡å®šç‰ˆæœ¬ï¼Œæ­¤æ—¶çš„headè®°å½•å€¼ä¸º"b40839f"ï¼Œè¾“å…¥å¦‚ä¸‹å‘½ä»¤å³å¯ï¼š
+git reset --hard b40839f
