@@ -30,6 +30,9 @@ git commit -m 'xxx'
 git remote add origin git@github.com:xxx/xxx.git
 git push origin debug
 
+全覆盖
+git push -f origin
+
 #使用git恢复未提交的误删数据
 git reflog 获取最近操作记录
 想要将代码恢复到指定版本，此时的head记录值为"b40839f"，输入如下命令即可：
