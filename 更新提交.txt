@@ -30,8 +30,26 @@ git commit -m 'xxx'
 git remote add origin git@github.com:xxx/xxx.git
 git push origin debug
 
-全覆盖
+完全覆盖-除非只有自己一个人用，不然用 push --force 的都该去死————！
 git push -f origin
+
+新建一个分支
+$ git branch newbranch  
+检查分支是否创建成功
+$ git branch 
+切换到你的新分支
+$ git checkout newbranch
+提交到新分支上
+$ git add . 
+$ git commit -m "18.03.01"
+切换到主分支
+$ git checkout master 
+将新分支提交的改动合并到主分支上
+$ git merge newbranch  
+push
+$ git push -u origin master
+删除这个分支
+$ git branch -D newbranch
 
 #使用git恢复未提交的误删数据
 git reflog 获取最近操作记录
